@@ -99,8 +99,8 @@ function create_stage() {
 function setup() {
   createCanvas(CANVAS_SIZE_X + 200, CANVAS_SIZE_Y + 150);
 
-  // participant_name = prompt("Enter Name", "DEFAULT_USER")
-  participant_name = "JEN";
+  participant_name = prompt("Enter Name", "DEFAULT_USER")
+  // participant_name = "JEN";
 
   create_stage();
 }
