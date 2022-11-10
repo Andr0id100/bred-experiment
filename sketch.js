@@ -153,22 +153,22 @@ function ready_listener() {
 function active_listener() {
   if (keyIsDown(LEFT_ARROW)) {
     velocity_x -= acc_x;
-    session_moves.push(["LEFT", Date.now()]);
+    session_moves.push(["LEFT", Date.now(), pos_x, pos_y]);
   }
 
   if (keyIsDown(RIGHT_ARROW)) {
     velocity_x += acc_x;
-    session_moves.push(["RIGHT", Date.now()]);
+    session_moves.push(["RIGHT", Date.now(), pos_x, pos_y]);
   }
 
   if (keyIsDown(UP_ARROW)) {
     velocity_y -= acc_y;
-    session_moves.push(["UP", Date.now()]);
+    session_moves.push(["UP", Date.now(), pos_x, pos_y]);
   }
 
   if (keyIsDown(DOWN_ARROW)) {
     velocity_y += acc_y;
-    session_moves.push(["DOWN", Date.now()]);
+    session_moves.push(["DOWN", Date.now(), pos_x, pos_y]);
   }
 
   pos_x += velocity_x;
